@@ -1,0 +1,26 @@
+.text__animate {
+  display: inline-block;
+  position: relative;
+  animation: 1s ease 0s 1 slideInFromLeft;
+  animation: bounceIn 1s ease 0s 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  min-width: 10px;
+
+  @for $i from 1 through 35 {
+    .text__animate._#{$i} {
+      animation-delay: 0.1s * $i;
+    }
+  }
+
+  @keyframes slideInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}

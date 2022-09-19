@@ -1,0 +1,38 @@
+.logo__ctn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    animation: fill 0.5s ease forwards 3.5s;
+    filter: none;
+
+    @keyframes fill {
+      0% {
+        fill: none;
+      }
+      100% {
+        fill: #ffd700;
+        filter: drop-shadow(0 0 0.5rem #ffd700);
+      }
+    }
+
+    path {
+      stroke-dasharray: 587;
+      stroke-dashoffset: 587;
+      animation: line-animation 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards
+        1s;
+      @keyframes line-animation {
+        0% {
+          stroke-dashoffset: 587;
+        }
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.main {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+  .tags {
+    position: absolute;
+    color: #ffd700;
+    opacity: 0.6;
+    left: 120px;
+    font-size: 1.2em;
+    font-family: "La Belle Aurore", cursive;
+  }
+
+  .top__tags {
+    top: 3.1em;
+    bottom: auto;
+  }
+
+  .bottom__tags {
+    top: auto;
+    bottom: 3.1em;
+
+    .bottom__tag__html {
+      margin-left: -20px;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import MainPage from "../components";
+import styles from "../styles/Home.module.scss";
 
 export default function Home() {
   return (
@@ -11,7 +12,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <span className={`${styles.tags} ${styles.top__tags}`}>
+          &lt;body&gt;
+        </span>
+        <MainPage />
+        <span className={`${styles.tags} ${styles.bottom__tags}`}>
+          &lt;/body&gt;
+          <br />
+          <span className={styles.bottom__tag__html}>&lt;/html&gt;</span>
+        </span>
+      </main>
     </div>
   );
 }

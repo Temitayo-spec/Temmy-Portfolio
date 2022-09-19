@@ -1,0 +1,136 @@
+.sidebar__wrapper {
+  background: #181818;
+  width: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: 0.5s;
+
+  .sidebar__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .sidebar__logo {
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    a {
+      text-align: center;
+    }
+
+    a h1 {
+      color: #fff;
+      width: 50px;
+      height: 50px;
+      margin: 0 auto;
+      text-shadow: 0px 0 10px #ffd700;
+    }
+
+    p {
+      font-size: 2px;
+      font-weight: 600;
+      color: #ffd700;
+      letter-spacing: 2px;
+      text-align: center;
+      line-height: 30px;
+    }
+  }
+}
+
+.sidebar__menu {
+  ul li {
+    list-style: none;
+    margin: 2em 0;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;    
+
+    .active svg {
+      path {
+        fill: #ffd700;
+      }
+    }
+
+    a {
+      svg {
+        width: 50%;
+        transition: 0.3s;
+
+        path {
+          fill: #fff;
+        }
+      }
+
+      line-height: 51px;
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #ffd700;
+        transition: width 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+
+      &:hover {
+        svg {
+          path {
+            fill: #ffd700;
+          }
+        }
+
+        &::after {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+.sidebar__social {
+  ul li {
+    list-style: none;
+    margin: 0.2em 0;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+
+    a {
+      svg {
+        width: 25%;
+        transition: 0.3s;
+      }
+
+      line-height: 51px;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #ffd700;
+        transition: width 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+
+      &:hover {
+        svg {
+          path {
+            fill: #ffd700;
+          }
+        }
+
+        &::after {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
+}
