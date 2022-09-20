@@ -39,7 +39,7 @@ const Preloader = () => {
       )
       .to(textRef.current, {
         opacity: 1,
-        boxShadow: "0px 0px 20px rgba(255, 255, 255, 0.23)",
+        textShadow: "0px 0px 20px #ffd700",
         skewY: 2,
         y: "10%",
         stagger: {
