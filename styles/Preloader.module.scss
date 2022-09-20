@@ -1,8 +1,9 @@
-.preloader {
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Nunito:wght@200;300;400;500;600;700&family=Raleway:wght@200;300;400;500;600;700&display=swap");.preloader {
   position: relative;
   height: 100vh;
   width: 100%;
   overflow: hidden;
+  font-family: "Nunito", sans-serif;
 }
 
 .preloader__inner {
@@ -49,4 +50,5 @@
   opacity: 0;
   font-size: 40px;
   color: #ffd700;
+  font-family: "Raleway", sans-serif;
 }
