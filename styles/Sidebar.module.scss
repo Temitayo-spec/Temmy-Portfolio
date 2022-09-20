@@ -37,12 +37,16 @@
     }
 
     p {
-      font-size: 2px;
+      font-size: 0.8rem;
       font-weight: 600;
       color: #ffd700;
-      letter-spacing: 2px;
+      letter-spacing: 4px;
       text-align: center;
       line-height: 30px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+      }
     }
   }
 }
