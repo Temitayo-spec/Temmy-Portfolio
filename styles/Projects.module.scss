@@ -1,0 +1,150 @@
+.project__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  z-index: 4;
+
+  .tags {
+    position: absolute;
+    color: #ffd700;
+    opacity: 0.6;
+    left: 120px;
+    font-size: 1.2em;
+    font-family: "La Belle Aurore", cursive;
+  }
+
+  .top__tags {
+    top: 2em;
+    bottom: auto;
+  }
+
+  .bottom__tags {
+    top: auto;
+    bottom: 2em;
+
+    .bottom__tag__html {
+      margin-left: -20px;
+    }
+  }
+
+  .project__inner {
+    width: 85%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+    margin: 0 auto;
+
+    .lhs {
+      width: 50%;
+      margin-top: 3em;
+
+      p {
+        font-size: 1.2em;
+        font-family: "La Belle Aurore", cursive;
+        color: #ffd700;
+        opacity: 0.6;
+      }
+    }
+
+    .text__zone {
+      h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        color: #ffd700;
+        font-family: "Raleway", sans-serif;
+        position: relative;
+        animation: 1s ease 0s 1 slideInFromLeft;
+        letter-spacing: 1px;
+
+        @keyframes slideInFromLeft {
+          0% {
+            opacity: 0;
+            transform: translateX(-100px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+        &::before {
+          content: "<h1>";
+          color: #ffd700;
+          font-size: 2rem;
+          position: absolute;
+          margin-top: -30px;
+          opacity: 0.6;
+          left: -0.9em;
+          font-family: "La Belle Aurore", cursive;
+        }
+
+        &::after {
+          content: "</h1>";
+          color: #ffd700;
+          font-size: 2rem;
+          position: absolute;
+          margin-top: 0.6em;
+          margin-left: 0.6em;
+          opacity: 0.6;
+          font-family: "La Belle Aurore", cursive;
+          animation: fadeIn 1s 1.7s backwards;
+        }
+
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+      p {
+        font-size: 1rem;
+        font-weight: 200;
+        color: #fff;
+        font-family: "Nunito", sans-serif;
+        margin-bottom: 1rem;
+        animation: 1s ease-in-out 1.5s pulse;
+        animation-fill-mode: backwards;
+        @keyframes pulse {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.1);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+
+        span {
+          color: #f7b500;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.projects__list {
+  width: 100%;
+  height: 65vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}

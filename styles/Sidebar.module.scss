@@ -6,6 +6,7 @@
   left: 0;
   z-index: 1;
   transition: 0.5s;
+  z-index: 4;
 
   .sidebar__inner {
     display: flex;
@@ -47,10 +48,12 @@
 .sidebar__menu {
   ul li {
     list-style: none;
-    margin: 2em 0;
+    margin: 0;
     text-align: center;
     cursor: pointer;
-    transition: 0.3s;    
+    transition: 0.3s;  
+    font-size: 3.5em;
+    padding: 0;
 
     .active svg {
       path {
@@ -68,7 +71,6 @@
         }
       }
 
-      line-height: 51px;
       &::after {
         content: "";
         display: block;
@@ -97,18 +99,17 @@
 .sidebar__social {
   ul li {
     list-style: none;
-    margin: 0.2em 0;
     text-align: center;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s;  
 
     a {
+    font-size: 3.5em;
+
       svg {
         width: 25%;
         transition: 0.3s;
       }
-
-      line-height: 51px;
 
       &::after {
         content: "";
