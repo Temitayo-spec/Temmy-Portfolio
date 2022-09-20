@@ -13,7 +13,7 @@ const MainPage = () => {
   useEffect(() => {
     setTimeout(() => {
       setLetterClass("text__animate__hover");
-    }, 4000);
+    }, 5000);
   }, []);
   return (
     <div className={styles.home__wrapper}>

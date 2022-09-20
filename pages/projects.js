@@ -16,7 +16,7 @@ const Contact = () => {
 
     setTimeout(() => {
       setLetterClass("text__animate__hover");
-    }, 4000);
+    }, 6000);
   }, []);
 
   return (
