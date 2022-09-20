@@ -1,0 +1,52 @@
+.preloader {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.preloader__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #0f0f0f;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.percent {
+  color: #fff;
+}
+
+.bar {
+  width: 60%;
+  margin-top: 20px;
+}
+
+.bar__confirm {
+  width: 1%;
+  padding: 1px 0px;
+  background-color: #fff;
+}
+
+.heading {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url("/images/farm-outline.png") bottom right no-repeat, #022c43;
+}
+
+.heading h1 {
+  text-transform: uppercase;
+  opacity: 0;
+  font-size: 40px;
+  color: #ffd700;
+}

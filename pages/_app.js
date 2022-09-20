@@ -1,11 +1,25 @@
 import "../styles/globals.scss";
 import { Layout } from "../components";
+import Preloader from "../components/Preloader";
+import { useEffect, useState } from "react";
 
 function MyApp({ Component, pageProps }) {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+  }, []);
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      {loading ? (
+        <Preloader />
+      ) : (
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      )}
+    </>
   );
 }
 
