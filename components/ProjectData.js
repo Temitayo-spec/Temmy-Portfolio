@@ -5,7 +5,7 @@ export const dataList = [
     description:
       "A blogging platform built with Next.js (React Framework), Redux Toolkit for state management, Node.js and Express for the backend server, MongoDB for the database.✨🎉",
     image: "/images/blogify-app.png",
-    link: "https://blogify-nextjs.vercel.app/",
+    link: "https://temmyblogify.vercel.app/",
     github: "https://github.com/Temitayo-spec/Blogify",
   },
   {
@@ -22,7 +22,7 @@ export const dataList = [
     description:
       "This is an E-commerce app built with Nextjs, Sanity as a headless CMS, Stripe for payment integrations and Redux Toolkit for State Management.🎉✨",
     image: "/images/ecommerce-app.png",
-    link: "https://ecommerce-nextjs.vercel.app/",
+    link: "https://temmy-ecommerce.vercel.app/",
     github: "https://github.com/Temitayo-spec/E-commerce",
   },
   {
@@ -31,8 +31,8 @@ export const dataList = [
     description:
       "A Fullstack TodoApp with User Authentication and Authorization built with Nextjs and Redux toolkit for state management✨🎉",
     image: "/images/todo-app.png",
-    link: "https://todo-app-nextjs.vercel.app/",
-    github: "https://github.com/Temitayo-spec/E-commerce",
+    link: "https://temmytodoapp.netlify.app/",
+    github: "https://github.com/Temitayo-spec/temmytodoapp",
   },
   {
     id: 5,
@@ -40,7 +40,7 @@ export const dataList = [
     description:
       "A platform aimed at innovating the learning experience of Nigerian University students built with Nextjs, Redux Toolkit for state management, Node.js and Express for the backend server, MongoDB for the database.✨🎉",
     image: "/images/learnovate.png",
-    link: "https://learnovate.vercel.app/",
+    link: "https://learnovate.xyz/",
     github: "https://github.com/Temitayo-spec/",
   },
   {
@@ -49,8 +49,9 @@ export const dataList = [
     description:
       "A challenge to build an app with the RestCountries API with Nextjs, Redux Toolkit for state management✨🎉",
     image: "/images/restcountries.png",
-    link: "https://restcountries-nextjs.vercel.app/",
-    github: "https://github.com/Temitayo-spec/",
+    link: "https://restcountries-temmy.netlify.app/",
+    github:
+      "https://github.com/Temitayo-spec/Rest-Countries-API-With-Theme-Switcher",
   },
   {
     id: 7,
@@ -85,5 +86,22 @@ export const dataList = [
     image: "/images/digital-resume.png",
     link: "https://digital-resume-nextjs.vercel.app/",
     github: "https://github.com/Temitayo-spec/Digital-Resume",
+  },
+  {
+    id: 11,
+    title: "Crowfunding Product Page",
+    description:
+      "✨🎉A Crowfunding Product Page built with HTML, CSS and Javascript",
+    image: "/images/crowfunding.png",
+    link: "https://crowfunding-kappa.vercel.app/",
+    github: "https://github.com/Temitayo-spec/Crowfunding",
+  },
+  {
+    id: 12,
+    title: "Bookmark Manager",
+    description: "✨🎉A Bookmark Manager built with HTML, CSS and Javascript",
+    image: "/images/bookmark-manager.png",
+    link: "https://temmybookmark.netlify.app/",
+    github: "https://github.com/Temitayo-spec/bookmark",
   },
 ];

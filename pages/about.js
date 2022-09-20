@@ -22,7 +22,7 @@ const About = () => {
 
     setTimeout(() => {
       setLetterClass("text__animate__hover");
-    }, 5000);
+    }, 6000);
   }, []);
 
   return (

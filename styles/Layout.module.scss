@@ -3,7 +3,11 @@
   min-height: 100vh;
   height: 100%;
   width: 90%;
-  margin: 0 auto;
+  margin: 0 0 0 60px;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
 
   & > div {
     width: 100%;

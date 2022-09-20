@@ -3,13 +3,22 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBuilding,
+  faCloud,
   faEnvelope,
   faHome,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook, faFacebookF, faGithubAlt, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebook,
+  faFacebookF,
+  faGithubAlt,
+  faLinkedinIn,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { useRouter } from "next/router";
 
 const Sidebar = () => {
+  const { pathname } = useRouter();
   return (
     <div className={styles.sidebar__wrapper}>
       <div className={styles.sidebar__inner}>
@@ -25,28 +34,28 @@ const Sidebar = () => {
           <ul>
             <li>
               <Link href="/">
-                <a className={styles.active}>
+                <a className={pathname === "/" && styles.active}>
                   <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/about">
-                <a className={styles.about__link}>
+                <a className={pathname === "/about" && styles.active}>
                   <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/projects">
-                <a className={styles.projects}>
-                  <FontAwesomeIcon icon={faBuilding} color="#4d4d4e" />
+                <a className={pathname === "/projects" && styles.active}>
+                  <FontAwesomeIcon icon={faCloud} color="#4d4d4e" />
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/contact">
-                <a className={styles.contact__link}>
+                <a className={pathname === "/contact" && styles.active}>
                   <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
                 </a>
               </Link>
@@ -59,25 +68,28 @@ const Sidebar = () => {
             <li>
               <a
                 href="https://github.com/Temitayo-spec"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faGithubAlt} color="#4d4d4e" />
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/OlawanleTemita1" target="_blank" rel="noreferrer">
+              <a
+                href="https://twitter.com/OlawanleTemita1"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faTwitter} color="#4d4d4e" />
               </a>
             </li>
             <li>
               <a
                 href="https://www.linkedin.com/in/temitayo-spec/"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
-                <FontAwesomeIcon
-                  icon={faLinkedinIn}
-                  color="#4d4d4e"
-                />
+                <FontAwesomeIcon icon={faLinkedinIn} color="#4d4d4e" />
               </a>
             </li>
           </ul>

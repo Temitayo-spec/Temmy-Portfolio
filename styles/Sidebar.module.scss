@@ -1,12 +1,14 @@
 .sidebar__wrapper {
   background: #181818;
   width: 60px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
   transition: 0.5s;
   z-index: 4;
+  min-height: 100vh;
+  height: 100%;
 
   .sidebar__inner {
     display: flex;
@@ -51,9 +53,13 @@
     margin: 0;
     text-align: center;
     cursor: pointer;
-    transition: 0.3s;  
+    transition: 0.3s;
     font-size: 3.5em;
     padding: 0;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2.5em;
+    }
 
     .active svg {
       path {
@@ -101,14 +107,32 @@
     list-style: none;
     text-align: center;
     cursor: pointer;
-    transition: 0.3s;  
+    transition: 0.3s;
 
     a {
-    font-size: 3.5em;
+      font-size: 3.5em;
+
+      @media screen and (max-width: 768px) {
+        font-size: 2.5em;
+      }
 
       svg {
         width: 25%;
         transition: 0.3s;
+
+        @media screen and (max-width: 768px) {
+          width: 50%;
+        }
+
+        path {
+          fill: #fff;
+        }
+
+        &:hover {
+          path {
+            fill: #ffd700;
+          }
+        }
       }
 
       &::after {
@@ -121,12 +145,6 @@
       }
 
       &:hover {
-        svg {
-          path {
-            fill: #ffd700;
-          }
-        }
-
         &::after {
           width: 100%;
           left: 0;

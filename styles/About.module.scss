@@ -7,30 +7,50 @@
   z-index: 4;
 
   .about__inner {
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 3em;
     margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 2em;
+    }
+
     .tags {
-      position: absolute;
+      position: fixed;
       color: #ffd700;
       opacity: 0.6;
       left: 120px;
       font-size: 1.2em;
       font-family: "La Belle Aurore", cursive;
+
+      @media screen and (max-width: 768px) {
+        left: 90px;
+        font-size: 1em;
+      }
     }
 
     .top__tags {
       top: 3.1em;
       bottom: auto;
+
+      @media screen and (max-width: 768px) {
+        top: 1em;
+      }
     }
 
     .bottom__tags {
       top: auto;
       bottom: 3.1em;
+
+      @media screen and (max-width: 768px) {
+        bottom: 1em;
+      }
 
       .bottom__tag__html {
         margin-left: -20px;
@@ -42,10 +62,23 @@
       align-items: center;
       justify-content: space-between;
       position: relative;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+        width: 100%;
+      }
     }
 
     .text__zone {
       width: 60%;
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (max-width: 768px) {
+        width: 80%;
+      }
       h1 {
         font-size: 4rem;
         font-weight: 600;
@@ -55,6 +88,12 @@
         position: relative;
         animation: 1s ease 0s 1 slideInFromLeft;
         letter-spacing: 1px;
+        align-self: center;
+
+        @media screen and (max-width: 768px) {
+          font-size: 2rem;
+          margin-bottom: 0;
+        }
 
         @keyframes slideInFromLeft {
           0% {
@@ -76,6 +115,11 @@
           opacity: 0.6;
           left: -0.9em;
           font-family: "La Belle Aurore", cursive;
+
+          @media screen and (max-width: 768px) {
+            font-size: 1rem;
+            margin-top: -20px;
+          }
         }
 
         &::after {
@@ -88,6 +132,11 @@
           opacity: 0.6;
           font-family: "La Belle Aurore", cursive;
           animation: fadeIn 1s 1.7s backwards;
+
+          @media screen and (max-width: 768px) {
+            font-size: 1rem;
+            margin-left: 0.6em;
+          }
         }
 
         @keyframes fadeIn {
@@ -109,6 +158,10 @@
         font-size: 1.2rem;
         margin-bottom: 1rem;
         animation: 1s ease-in 1.5s pulse;
+
+        @media screen and (max-width: 768px) {
+          font-size: 1rem;
+        }
 
         &:nth-child(2) {
           animation-delay: 1.7s;
@@ -145,11 +198,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: auto auto 5em auto;
+  }
   .cube__spinner {
     animation: spincube ease-in-out infinite 12s;
     transform-style: preserve-3d;
     transform-origin: 100px 100px 0;
     margin-top: -100px;
+    position: relative;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 0;
+      transform-origin: 50px 50px 0;
+    }
 
     .face__1,
     .face__2,
@@ -169,34 +234,69 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       border-radius: 5px;
 
+      @media screen and (max-width: 768px) {
+        width: 100px;
+        height: 100px;
+        font-size: 50px;
+      }
+
       svg {
         width: 100px;
         height: 100px;
+
+        @media screen and (max-width: 768px) {
+          width: 50px;
+          height: 50px;
+        }
       }
     }
 
     .face__1 {
       transform: translateZ(100px);
+
+      @media screen and (max-width: 768px) {
+        transform: translateZ(50px);
+      }
     }
 
     .face__2 {
       transform: rotateY(90deg) translateZ(100px);
+
+      @media screen and (max-width: 768px) {
+        transform: rotateY(90deg) translateZ(50px);
+      }
     }
 
     .face__3 {
       transform: rotateY(180deg) translateZ(100px);
+
+      @media screen and (max-width: 768px) {
+        transform: rotateY(180deg) translateZ(50px);
+      }
     }
 
     .face__4 {
       transform: rotateY(270deg) translateZ(100px);
+
+      @media screen and (max-width: 768px) {
+        transform: rotateY(270deg) translateZ(50px);
+      }
     }
 
     .face__5 {
       transform: rotateX(90deg) translateZ(100px);
+
+      @media screen and (max-width: 768px) {
+        transform: rotateX(90deg) translateZ(50px);
+      }
     }
 
     .face__6 {
       transform: rotateX(270deg) translateZ(100px);
+
+      @media screen and (max-width: 768px) {
+        transform: rotateX(270deg) translateZ(50px);
+      }
     }
   }
 

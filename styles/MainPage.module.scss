@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   z-index: 4;
 
@@ -15,7 +15,19 @@
     gap: 3em;
     margin: 0 auto;
 
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 2em;
+    }
+
     .text__zone {
+      @media screen and (max-width: 768px) {
+        margin-top: 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
       h1 {
         font-size: 4rem;
         font-weight: 600;
@@ -26,11 +38,21 @@
         animation: 1s ease 0s 1 slideInFromLeft;
         letter-spacing: 1px;
 
+        @media screen and (max-width: 768px) {
+          font-size: 2rem;
+          align-self: center;
+          text-align: center;
+        }
+
         .name {
           color: #f7b500;
           text-shadow: 0 0 20px #f7b500;
           font-size: 4.5rem;
           animation: rotateIn 4s ease;
+
+          @media screen and (max-width: 768px) {
+            font-size: 2.5rem;
+          }
 
           @keyframes rotateIn {
             0% {
@@ -62,6 +84,12 @@
           opacity: 0.6;
           left: -0.9em;
           font-family: "La Belle Aurore", cursive;
+
+          @media screen and (max-width: 768px) {
+            font-size: 1rem;
+            margin-top: 0;
+            left: 20%;
+          }
         }
 
         &::after {
@@ -74,6 +102,10 @@
           opacity: 0.6;
           font-family: "La Belle Aurore", cursive;
           animation: fadeIn 1s 1.7s backwards;
+
+          @media screen and (max-width: 768px) {
+            font-size: 1rem;
+          }
         }
 
         @keyframes fadeIn {
@@ -96,6 +128,10 @@
         position: relative;
         animation: 1s ease 0s 1 slideInFromLeft;
 
+        @media screen and (max-width: 768px) {
+          font-size: 1rem;
+        }
+
         @keyframes slideInFromLeft {
           0% {
             opacity: 0;
@@ -116,6 +152,10 @@
           opacity: 0.6;
           left: -0.9em;
           font-family: "La Belle Aurore", cursive;
+
+          @media screen and (max-width: 768px) {
+            font-size: 0.5rem;
+          }
         }
 
         &::after {
@@ -128,6 +168,10 @@
           opacity: 0.6;
           font-family: "La Belle Aurore", cursive;
           animation: fadeIn 1s 1.7s backwards;
+
+          @media screen and (max-width: 768px) {
+            font-size: 0.5rem;
+          }
         }
 
         @keyframes fadeIn {
@@ -149,6 +193,10 @@
         font-size: 1.2rem;
         margin-bottom: 1rem;
         animation: 1s ease 0s 1 slideInFromRight;
+
+        @media screen and (max-width: 768px) {
+          font-size: 0.8rem;
+        }
 
         span {
           color: #f7b500;
@@ -182,6 +230,10 @@
         border: 2px solid #f7b500;
         letter-spacing: 3px;
         text-transform: uppercase;
+
+        @media screen and (max-width: 768px) {
+          font-size: 0.8rem;
+        }
 
         &::before {
           content: "";

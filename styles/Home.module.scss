@@ -5,22 +5,36 @@
   display: flex;
 
   .tags {
-    position: absolute;
+    position: fixed;
     color: #ffd700;
     opacity: 0.6;
     left: 120px;
     font-size: 1.2em;
     font-family: "La Belle Aurore", cursive;
+
+    @media screen and (max-width: 768px) {
+      left: 90px;
+      top: 0;
+      font-size: 1em;
+    }
   }
 
   .top__tags {
     top: 3.1em;
     bottom: auto;
+
+    @media screen and (max-width: 768px) {
+      top: 1em;
+    }
   }
 
   .bottom__tags {
     top: auto;
     bottom: 3.1em;
+
+    @media screen and (max-width: 768px) {
+      bottom: 1em;
+    }
 
     .bottom__tag__html {
       margin-left: -20px;
