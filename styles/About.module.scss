@@ -7,7 +7,7 @@
   z-index: 4;
 
   .about__inner {
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
     display: flex;
     align-items: center;
@@ -19,6 +19,7 @@
       flex-direction: column;
       justify-content: center;
       gap: 2em;
+      width: 100%;
     }
 
     .tags {
@@ -88,11 +89,13 @@
         position: relative;
         animation: 1s ease 0s 1 slideInFromLeft;
         letter-spacing: 1px;
-        align-self: center;
+        margin-left: 1em;
 
         @media screen and (max-width: 768px) {
           font-size: 2rem;
           margin-bottom: 0;
+          margin-left: 0;
+          align-self: center;
         }
 
         @keyframes slideInFromLeft {
