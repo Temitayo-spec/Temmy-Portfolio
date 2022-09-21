@@ -51,9 +51,14 @@ const MainPage = () => {
             <Link href="/contact">
               <a className={styles.btn}>Contact Me</a>
             </Link>
-            <Link href="/contact">
-              <a className={styles.btn}>Contact Me</a>
-            </Link>
+            <a
+              href="/assets/temitayo-resume.pdf"
+              className={styles.btn}
+              download
+              style={{ marginLeft: "1rem" }}
+            >
+              Download Resume
+            </a>
           </div>
         </div>
 
