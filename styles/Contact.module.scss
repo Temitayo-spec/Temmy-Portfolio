@@ -289,6 +289,7 @@
       margin-top: 1rem;
       margin-left: auto;
       position: relative;
+      z-index: 4;
 
       &::after {
         content: "";
@@ -298,7 +299,7 @@
         top: 0;
         left: 0;
         background: #ffd700;
-        z-index: -1;
+        z-index: 1;
         transform: scaleX(0);
         transform-origin: left;
         transition: transform 0.3s ease-in-out;
