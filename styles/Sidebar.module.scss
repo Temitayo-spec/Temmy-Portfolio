@@ -17,7 +17,6 @@
     align-items: center;
     justify-content: space-between;
     min-height: 100vh;
-    width: 100%;
     padding: 20px 0;
   }
 
@@ -110,7 +109,6 @@
 
       &::after {
         content: "Home";
-        display: block;
         font-size: 0.8rem;
         font-weight: 600;
         color: #fff;
@@ -127,10 +125,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: -1;
         padding: 0.5em;
         border-radius: 5px;
         opacity: 0;
+        text-transform: uppercase;
+        visibility: hidden;
+        @media screen and (max-width: 786px) {
+          top: -9px;
+        }
       }
 
       &::before {
@@ -154,6 +156,7 @@
         &::after {
           opacity: 1;
           transform: translateX(10px);
+          visibility: visible;
         }
 
         &::before {
