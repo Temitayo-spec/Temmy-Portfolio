@@ -52,7 +52,8 @@ const MainPage = () => {
               <a className={styles.btn}>Contact Me</a>
             </Link>
             <a
-              href="/assets/temitayo-resume.pdf"
+              href="./assets/temmy-resume.pdf"
+              target="_blank"
               className={styles.btn}
               download
               style={{ marginLeft: "1rem" }}
