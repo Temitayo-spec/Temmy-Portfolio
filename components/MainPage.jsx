@@ -47,9 +47,14 @@ const MainPage = () => {
             I&apos;m a frontend developer with a passion for building beautiful
             and functional <span>websites.</span>
           </p>
-          <Link href="/contact">
-            <a className={styles.btn}>Contact Me</a>
-          </Link>
+          <div className={styles.links__ctn}>
+            <Link href="/contact">
+              <a className={styles.btn}>Contact Me</a>
+            </Link>
+            <Link href="/contact">
+              <a className={styles.btn}>Contact Me</a>
+            </Link>
+          </div>
         </div>
 
         <div className={styles.image__zone}>
