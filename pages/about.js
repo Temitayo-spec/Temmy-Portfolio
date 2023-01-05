@@ -1,7 +1,7 @@
-import styles from "../styles/About.module.scss";
-import { AnimatedLetters } from "../components";
-import { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from '../styles/About.module.scss';
+import { AnimatedLetters } from '../components';
+import { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCss3,
   faHtml5,
@@ -9,19 +9,19 @@ import {
   faNodeJs,
   faReact,
   faSass,
-} from "@fortawesome/free-brands-svg-icons";
-import Loader from "react-loaders";
+} from '@fortawesome/free-brands-svg-icons';
+import Loader from 'react-loaders';
 
 const About = () => {
   const [loading, setLoading] = useState(true);
-  const [letterClass, setLetterClass] = useState("text__animate");
+  const [letterClass, setLetterClass] = useState('text__animate');
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 1500);
 
     setTimeout(() => {
-      setLetterClass("text__animate__hover");
+      setLetterClass('text__animate__hover');
     }, 6000);
   }, []);
 
@@ -40,13 +40,16 @@ const About = () => {
                 <h1>
                   <AnimatedLetters
                     letterClass={letterClass}
-                    strArray={"About me".split("")}
+                    strArray={'About me'.split('')}
                     idx={15}
                   />
                 </h1>
                 <p>
                   I&apos;m a full stack web developer (Frontend Heavy) with a
-                  passion for creating beautiful and functional websites.
+                  passion for creating beautiful and functional websites with
+                  technologies like React, Nextjs, Redux, Nodejs, Express,
+                  MongoDB, Typescript, Styled Component, SASS, Jest, Sanity.io
+                  etc.
                 </p>
                 <p>
                   I&apos;m very ambitious and I&apos;m looking for a role in an
