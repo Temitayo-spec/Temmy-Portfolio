@@ -7,7 +7,7 @@
   opacity: 0;
   min-width: 10px;
 
-  @for $i from 1 through 35 {
+  @for $i from 1 through 45 {
     .text__animate._#{$i} {
       animation-delay: 0.1s * $i;
     }
