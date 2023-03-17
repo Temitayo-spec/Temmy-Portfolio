@@ -69,7 +69,7 @@ export const dataList = [
     description:
       '✨🎉A Nice landing page built with Next Js, Smooth transition between pages using Framer Motion and React-slideshow library for smooth changes of images, and also with a preloader animated with gsap',
     image: '/images/kenneth-landing.png',
-    link: 'https://kenneth-landing-page.vercel.app/',
+    link: 'https://kenneth-landing-page.netlify.app/',
     github: 'https://github.com/Temitayo-spec/Kenneth-landing-page',
   },
   {
