@@ -10,8 +10,6 @@ const ContactForm = () => {
     message: "",
   });
 
-  
-
   const [state, handleSubmit] = useForm("xjvzylak");
   if (state.succeeded) {
     return <p>Thanks for reaching out!🎉❤</p>;
