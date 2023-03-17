@@ -1,6 +1,35 @@
+import generateRandomID from '../utils/generateRandomID';
+
 export const dataList = [
   {
-    id: 1,
+    id: generateRandomID(),
+    title: 'EhNefTee',
+    description:
+      "EhNefTee is a webapp built with Nextjs and Moralis Web3 API to get the latest NFTs from the Ethereum Blockchain based on a user's wallet address.🎉❤",
+    image: '/images/ehneftee.png',
+    link: 'https://eh-nef-tee.vercel.app/',
+    github: 'https://github.com/Temitayo-spec/EhNefTee',
+  },
+  {
+    id: generateRandomID(),
+    title: 'Movix',
+    description:
+      'A movie app built with Nextjs and TMDB API and Firebase for the backend.🎉❤',
+    image: '/images/movix.png',
+    link: 'https://temmy-movixvercel.app/',
+    github: 'https://github.com/Temitayo-spec/Movix',
+  },
+  {
+    id: generateRandomID(),
+    title: 'PocketPal',
+    description:
+      'A landing page built with Nextjs, Styled-Components and Framer-Motion.🎉❤❤',
+    image: '/images/pocketpal.png',
+    link: 'https://pocketpal.vercel.app/',
+    github: 'https://github.com/Temitayo-spec/PocketPal',
+  },
+  {
+    id: generateRandomID(),
     title: 'Tic-Tac-Toe Game',
     description:
       '✨🎉A Multiplayer Tic-Tac-To Game built with Nextjs and Stream Chat',
@@ -9,7 +38,7 @@ export const dataList = [
     github: 'https://gtihub.com/Temitayo-spec/Tic-Tac-Toe',
   },
   {
-    id: 2,
+    id: generateRandomID(),
     title: 'Portfolio',
     description: 'My portfolio website built with Next.js and Love.😍',
     image: '/images/new-porfolio.png',
@@ -17,7 +46,7 @@ export const dataList = [
     github: 'htps://github.com/Temitayo-spec/Temmy-Portfolio',
   },
   {
-    id: 3,
+    id: generateRandomID(),
     title: 'Management Students Association (MSA)',
     description:
       'Management Students Association (MSA), Unilag website built with Next.js, Framer Motion, GSAP mainly.😍',
@@ -26,7 +55,7 @@ export const dataList = [
     github: 'https://github.com/Temitayo-spec/MSA-Unilag',
   },
   {
-    id: 4,
+    id: generateRandomID(),
     title: 'E-commerce',
     description:
       'This is an E-commerce app built with Nextjs, Sanity as an headless CMS, Stripe for payment integrations and Redux Toolkit for State Management.🎉✨',
@@ -34,18 +63,8 @@ export const dataList = [
     link: 'https://temmy-ecommerce.vercel.app/',
     github: 'https://github.com/Temitayo-spec/E-commerce',
   },
-
   {
-    id: 5,
-    title: 'Learnovate',
-    description:
-      'A platform aimed at innovating the learning experience of Nigerian University students built with Nextjs, Redux Toolkit for state management, Node.js and Express for the backend server, MongoDB for the database.✨🎉',
-    image: '/images/learnovate.png',
-    link: 'https://learnovate.xyz/',
-    github: 'https://github.com/Temitayo-spec/',
-  },
-  {
-    id: 6,
+    id: generateRandomID(),
     title: 'Kenneth Landing Page',
     description:
       '✨🎉A Nice landing page built with Next Js, Smooth transition between pages using Framer Motion and React-slideshow library for smooth changes of images, and also with a preloader animated with gsap',
@@ -54,7 +73,7 @@ export const dataList = [
     github: 'https://github.com/Temitayo-spec/Kenneth-landing-page',
   },
   {
-    id: 7,
+    id: generateRandomID(),
     title: 'RestCountries API with Theme Switcher',
     description:
       'A challenge to build an app with the RestCountries API with Nextjs, Redux Toolkit for state management✨🎉',
@@ -64,7 +83,7 @@ export const dataList = [
       'https://github.com/Temitayo-spec/Rest-Countries-API-With-Theme-Switcher',
   },
   {
-    id: 8,
+    id: generateRandomID(),
     title: 'Frontend Mentors Room Landing Page',
     description: 'A challenge to build a room landing page with Nextjs✨🎉',
     image: '/images/room-app.png',
@@ -72,7 +91,7 @@ export const dataList = [
     github: 'https://github.com/Temitayo-spec/',
   },
   {
-    id: 9,
+    id: generateRandomID(),
     title: 'Wordle Clone',
     description:
       'A Wordle clone built with Nextjs and ContextAPI for state management✨🎉',
@@ -81,17 +100,7 @@ export const dataList = [
     github: 'https://github.com/Temitayo-spec/Worlde-clone',
   },
   {
-    id: 10,
-    title: 'Todo App',
-    description:
-      'A Fullstack TodoApp with User Authentication and Authorization built with Nextjs and Redux toolkit for state management✨🎉',
-    image: '/images/todo-app.png',
-    link: 'https://temmytodoapp.netlify.app/',
-    github: 'https://github.com/Temitayo-spec/temmytodoapp',
-  },
-
-  {
-    id: 11,
+    id: generateRandomID(),
     title: 'Digital Resume',
     description: '✨🎉A Digital Resume built with HTML, CSS and Javascript',
     image: '/images/digital-resume.png',
@@ -99,7 +108,7 @@ export const dataList = [
     github: 'https://github.com/Temitayo-spec/Digital-Resume',
   },
   {
-    id: 12,
+    id: generateRandomID(),
     title: 'Crowfunding Product Page',
     description:
       '✨🎉A Crowfunding Product Page built with HTML, CSS and Javascript',
@@ -108,20 +117,11 @@ export const dataList = [
     github: 'https://github.com/Temitayo-spec/Crowfunding',
   },
   {
-    id: 13,
+    id: generateRandomID(),
     title: 'Bookmark Manager',
     description: '✨🎉A Bookmark Manager built with HTML, CSS and Javascript',
     image: '/images/bookmark-manager.png',
     link: 'https://temmybookmark.netlify.app/',
     github: 'https://github.com/Temitayo-spec/bookmark',
-  },
-  {
-    id: 14,
-    title: 'Blogify',
-    description:
-      'A blogging platform built with Next.js (React Framework), Redux Toolkit for state management, Node.js and Express for the backend server, MongoDB for the database.✨🎉',
-    image: '/images/blogify-app.png',
-    link: 'https://temmyblogify.vercel.app/',
-    github: 'https://github.com/Temitayo-spec/Blogify',
   },
 ];
